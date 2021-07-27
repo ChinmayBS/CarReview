@@ -24,26 +24,26 @@
       <JFXButton fx:id="loginButton" layoutX="642.0" layoutY="60.0" onAction="#login" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: #168aad;" text="Log In" />
       <ImageView fitHeight="72.0" fitWidth="76.0" layoutX="341.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../resources/icons/car.png" />
+            <Image url="@../resources/icons/car.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="26.0" fitWidth="47.0" layoutX="248.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../resources/icons/login.png" />
+            <Image url="@../resources/icons/login.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="26.0" fitWidth="35.0" layoutX="248.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../resources/icons/password.png" />
+            <Image url="@../resources/icons/password.png" />
          </image></ImageView>
       <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="248.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../resources/icons/gender.png" />
+            <Image url="@../resources/icons/gender.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="248.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../resources/icons/location.png" />
+            <Image url="@../resources/icons/location.png" />
          </image>
       </ImageView>
       <Label layoutX="302.0" layoutY="109.0" prefHeight="26.0" prefWidth="34.0" text="Car" textFill="#3bb2d0" />

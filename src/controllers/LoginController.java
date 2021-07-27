@@ -10,6 +10,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,6 +20,8 @@ import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
 
+    @FXML
+    public ImageView carImageView;
     @FXML
     private JFXTextField username;
 
@@ -39,7 +43,6 @@ public class LoginController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
     }
 
     @FXML

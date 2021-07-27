@@ -16,19 +16,19 @@
       <JFXPasswordField fx:id="password" layoutX="306.0" layoutY="288.0" prefHeight="26.0" prefWidth="212.0" promptText="Enter Your Password" />
       <ImageView fitHeight="34.0" fitWidth="26.0" layoutX="269.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../resources/icons/login.png" />
+            <Image url="@../resources/icons/login.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="26.0" fitWidth="34.0" layoutX="269.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../resources/icons/password.png" />
+            <Image url="@../resources/icons/password.png" />
          </image></ImageView>
       <JFXButton fx:id="loginButton" layoutX="456.0" layoutY="344.0" onAction="#login" prefHeight="34.0" prefWidth="77.0" style="-fx-background-color: #168aad;" text="Log In" />
       <JFXButton fx:id="signupButton" layoutX="677.0" layoutY="74.0" onAction="#signup" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: #168aad;" text="Sign Up" />
       <JFXCheckBox fx:id="remember" layoutX="303.0" layoutY="339.0" prefHeight="34.0" prefWidth="108.0" text="Remember" />
-      <ImageView fitHeight="86.0" fitWidth="91.0" layoutX="335.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="carImageView" fitHeight="86.0" fitWidth="91.0" layoutX="335.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../resources/icons/car.png" />
+            <Image url="@../resources/icons/car.png" />
          </image>
       </ImageView>
       <JFXButton fx:id="forgotPassword" layoutX="305.0" layoutY="388.0" prefHeight="26.0" prefWidth="212.0" text="Forgot Your Password" underline="true" />
