@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class Main2 extends Application {
 
     @Override
@@ -16,10 +18,12 @@ public class Main2 extends Application {
         primaryStage.setResizable(false);
         primaryStage.setScene(new Scene(root, 620, 421));
         primaryStage.show();
+
+
     }
 
 
-    public static void main(String[] args) {
-        launch(args);
+    public static void main(String[] args) throws IOException {
+       launch(args);
     }
 }

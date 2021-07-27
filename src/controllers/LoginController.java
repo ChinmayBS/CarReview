@@ -1,5 +1,6 @@
 package controllers;
 
+import backend.CSVLoader;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXCheckBox;
 import com.jfoenix.controls.JFXPasswordField;
@@ -10,12 +11,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
+import javafx.scene.control.Alert;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
@@ -23,10 +26,10 @@ public class LoginController implements Initializable {
     @FXML
     public ImageView carImageView;
     @FXML
-    private JFXTextField username;
+    private JFXTextField usernameText;
 
     @FXML
-    private JFXPasswordField password;
+    private JFXPasswordField passwordText;
 
     @FXML
     private JFXButton loginButton;
@@ -45,8 +48,35 @@ public class LoginController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
 
+    private boolean validateFields(){                         //make sure that all fields are filled
+        if(usernameText.getText().isEmpty() || passwordText.getText().isEmpty()){
+            Alert alert=new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("valid fields");
+            alert.setHeaderText("please enter all the details: ");
+            alert.setContentText("either password or name is not entered: ");
+            alert.showAndWait();
+            return false;
+        }
+        return true;
+    }
+
     @FXML
-    void login(ActionEvent event) {
+    void login(ActionEvent event) throws IOException {
+
+        CSVLoader csvLoader=new CSVLoader();
+        HashMap<String,String> loginMap=csvLoader.loadLoginDetails();
+
+        String username,password;
+        if(validateFields()) {
+            username = usernameText.getText();
+            password = passwordText.getText();
+
+            for (Map.Entry element : loginMap.entrySet()) {                                        //username password key value pairs
+                if (element.getKey().equals(username) && element.getValue().equals(password)) {
+                    System.out.println("Welcome: " + username);
+                }
+            }
+        }
 
     }
 
