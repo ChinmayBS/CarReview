@@ -58,6 +58,7 @@ public class SignupController implements Initializable {
     @FXML
     void login(ActionEvent event) throws IOException {
         signupButton.getScene().getWindow().hide();
+        //relative path for loading fxml
         Parent root= FXMLLoader.load(getClass().getResource("/fxml/login.fxml"));
         Stage loginStage=new Stage();
         loginStage.setScene(new Scene(root,800,500) );
