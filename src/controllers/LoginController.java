@@ -71,10 +71,22 @@ public class LoginController implements Initializable {
             username = usernameText.getText();
             password = passwordText.getText();
 
+           boolean flag=false;
             for (Map.Entry element : loginMap.entrySet()) {                                        //username password key value pairs
                 if (element.getKey().equals(username) && element.getValue().equals(password)) {
+                    flag=true;
                     System.out.println("Welcome: " + username);
                 }
+            }
+            if(!flag){
+                Alert alert=new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error: ");
+                alert.setHeaderText("Wrong credentials");
+                alert.showAndWait();
+            }
+          else{
+
+
             }
         }
 
