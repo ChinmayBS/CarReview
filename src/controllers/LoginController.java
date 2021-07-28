@@ -35,7 +35,7 @@ public class LoginController implements Initializable {
     private JFXButton loginButton;
 
     @FXML
-    private JFXButton signupButton;
+    private JFXButton signupButton ;
 
     @FXML
     private JFXCheckBox remember;
