@@ -1,5 +1,6 @@
 package controllers;
 
+import backend.CSVLoader;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXRadioButton;
@@ -54,7 +55,7 @@ public class SignupController implements Initializable {
 
     private boolean validateFields(){
         if(usernameText.getText().isEmpty() || passwordText.getText().isEmpty() || locationText.getText().isEmpty()
-       || (!male.isSelected() && !female.isSelected())|| (!(locationText.getText().matches("[A-Za-z]+")))){
+       || (!male.isSelected() && !female.isSelected())|| locationText.getText().isEmpty() ){
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Warning");
             alert.setHeaderText("please enter all the details: ");
@@ -119,12 +120,24 @@ public class SignupController implements Initializable {
 
 
     @FXML
-    void signup(ActionEvent event) {
+    void signup(ActionEvent event) throws IOException {
         if(validateFields() && validateName() && validatePassword()){
             System.out.println("sign up success");
+            String username=usernameText.getText();
+            String password=passwordText.getText();
+            String location=locationText.getText();
+            String gender;
+            if(male.isSelected()){
+                gender="male";
+            }
+            else{
+                gender="female";
+            }
+
+
         }
         else{
-            System.out.println("sign up failed");
+            //System.out.println("sign up failed");
         }
 
     }
