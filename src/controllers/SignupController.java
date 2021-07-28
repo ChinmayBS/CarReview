@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Label;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -27,6 +28,8 @@ public class SignupController implements Initializable {
     public JFXRadioButton female;
     public JFXRadioButton male;
 
+    public Label labelMessage;
+
     @FXML
     AnchorPane pane;
 
@@ -37,7 +40,7 @@ public class SignupController implements Initializable {
     private JFXTextField locationText;
 
     @FXML
-    private ToggleGroup gender;
+    private ToggleGroup genderToggleGroup;
 
     @FXML
     private JFXButton signupButton;
@@ -67,7 +70,7 @@ public class SignupController implements Initializable {
     }
 
     private boolean validateName(){               //name should contain only letters numbers and underscores
-        if(!(usernameText.getText().matches("[A-Za-z0-9_]+")))
+        if(!(usernameText.getText().matches("[A-Za-z0-9_]+")) )
         {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Warning");
@@ -135,6 +138,15 @@ public class SignupController implements Initializable {
             }
             CSVLoader csvLoader=new CSVLoader();
             csvLoader.updateSignupDetails(username+","+password+","+gender+","+location+","+0);
+            labelMessage.setText("Account Created Successfully");                 //display message on screen that account is successfully created
+
+            usernameText.clear();                    //clear the fields after successful sign up
+            passwordText.clear();
+            locationText.clear();
+            genderToggleGroup.selectToggle(null);
+
+
+
         }
         else{
             //System.out.println("sign up failed");
