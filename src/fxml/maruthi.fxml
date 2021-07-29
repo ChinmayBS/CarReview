@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="357.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+    <children>
+        <JFXButton contentDisplay="TOP" layoutX="27.0" layoutY="39.0" prefHeight="136.0" prefWidth="184.0" style="-fx-background-color: #20B2AA;" text="Maruti Suzuki Eeco 7 Seater Standard, 2013, Petrol" textAlignment="CENTER">
+            <graphic>
+                <ImageView fitHeight="67.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../resources/images/maruthi1.jpg" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </JFXButton>
+        <JFXButton contentDisplay="TOP" layoutX="27.0" layoutY="206.0" prefHeight="136.0" prefWidth="184.0" style="-fx-background-color: #20B2AA;" text="Maruti Suzuki Swift VDI BS IV, 2016, Diesel" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="76.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../resources/images/maruthi3.jpg" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton contentDisplay="TOP" layoutX="268.0" layoutY="39.0" prefHeight="136.0" prefWidth="184.0" style="-fx-background-color: #20B2AA;" text="Maruti Suzuki Swift LXI, 2016, Petrol" textAlignment="CENTER">
+            <graphic>
+                <ImageView fitHeight="70.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../resources/images/maruthi2.jpg" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </JFXButton>
+        <JFXButton contentDisplay="TOP" layoutX="268.0" layoutY="206.0" prefHeight="136.0" prefWidth="184.0" style="-fx-background-color: #20B2AA;" text="Maruti Suzuki Celerio, 2016, Petrol" textAlignment="CENTER">
+            <graphic>
+                <ImageView fitHeight="64.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../resources/images/maruthi4.jpg" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="System Bold" size="10.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

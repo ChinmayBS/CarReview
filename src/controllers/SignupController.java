@@ -136,7 +136,7 @@ public class SignupController implements Initializable {
             else{
                 gender="female";
             }
-            CSVLoader csvLoader=new CSVLoader();
+            CSVLoader csvLoader = new CSVLoader();
             csvLoader.updateSignupDetails(username+","+password+","+gender+","+location+","+0);
             labelMessage.setText("Account Created Successfully");                 //display message on screen that account is successfully created
 

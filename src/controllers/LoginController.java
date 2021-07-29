@@ -63,7 +63,7 @@ public class LoginController implements Initializable {
     @FXML
     void login(ActionEvent event) throws IOException {
 
-        CSVLoader csvLoader=new CSVLoader();
+        CSVLoader csvLoader = new CSVLoader();
         HashMap<String,String> loginMap=csvLoader.loadLoginDetails();
 
         String username,password;

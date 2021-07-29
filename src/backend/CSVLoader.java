@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class CSVLoader {
-    private ArrayList<String>  CSVString=new ArrayList<>();
+    private ArrayList<String>  CSVString = new ArrayList<>();
     private HashMap<String,String> loginMap;
 
     public ArrayList<String> getCSVString() {
@@ -29,7 +29,7 @@ public class CSVLoader {
         }
     }
 
-    public HashMap<String,String> loadLoginDetails(){
+    public HashMap<String,String> loadLoginDetails(){  //
         loginMap =new HashMap<>();
          for(String row:CSVString){
              String[]  detail=row.split(",");
@@ -41,7 +41,7 @@ public class CSVLoader {
 
     public void updateSignupDetails(String csvData) throws IOException {
         this.getCSVString().add(csvData);
-        FileWriter fileWriter=new FileWriter("src/resources/files/details.csv");
+        FileWriter fileWriter = new FileWriter("src/resources/files/details.csv");
 
         for(String row:getCSVString()){
             fileWriter.write(row+"\n");
@@ -49,7 +49,6 @@ public class CSVLoader {
         fileWriter.close();
 
     }
-
 
 
 }
