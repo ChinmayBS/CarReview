@@ -65,8 +65,9 @@ public class HomePageController implements Initializable {
     }
 
     @FXML
-    void goToHome(ActionEvent event) {
-
+    void goToHome(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("../fxml/home.fxml"));
+        holderPane.getChildren().add(root);
     }
 
     @FXML
