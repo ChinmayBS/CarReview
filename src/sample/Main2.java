@@ -16,7 +16,7 @@ public class Main2 extends Application {
         // Parent root = FXMLLoader.load(getClass().getResource("../fxml/signup.fxml"));
         primaryStage.setTitle("Car Review");
         primaryStage.setResizable(false);
-        primaryStage.setScene(new Scene(root, 620, 421));
+        primaryStage.setScene(new Scene(root, 800, 500));
         primaryStage.show();
 
 

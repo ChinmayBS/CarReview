@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
@@ -66,13 +67,39 @@
                   </Label>
                </center>
             </JFXToolbar>
-            <Button layoutX="766.0" layoutY="6.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="30.0" style="-fx-background-color: #6b705c;" />
-            <ImageView fx:id="popupButton" fitHeight="28.0" fitWidth="22.0" layoutX="770.0" layoutY="11.0" onMouseClicked="#popUpWindow" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../resources/icons/threedot.png" />
-               </image>
-            </ImageView>
-            <AnchorPane fx:id="holderPane" layoutX="160.0" layoutY="38.0" prefHeight="453.0" prefWidth="634.0" style="-fx-background-color: #F5F5F5;" />
+            <AnchorPane fx:id="holderPane" layoutX="167.0" layoutY="42.0" prefHeight="453.0" prefWidth="634.0" style="-fx-background-color: #F5F5F5;">
+               <children>
+                  <Line endX="543.0" layoutX="91.0" startX="-100.0" />
+                  <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="401.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true" />
+                  <AnchorPane fx:id="popUp" layoutX="447.0" layoutY="23.0" prefHeight="26.0" prefWidth="167.0" style="-fx-background-color: #6b705c;">
+                     <children>
+                        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="2.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/icons/login.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="6.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/icons/exit.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="logoutButton" layoutX="48.0" layoutY="9.0" onAction="#logoutScreen" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: #b7b7a4;" text="Logout" />
+                        <JFXButton fx:id="exitButton" layoutX="48.0" layoutY="34.0" onAction="#exitApplication" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: #a5a58d;" text="Exit" />
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+            <Button fx:id="popupButton" layoutX="762.0" mnemonicParsing="false" onMouseClicked="#popUpWindow" prefHeight="32.0" prefWidth="22.0" style="-fx-background-color: #6b705c;">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/threedot.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
       </Pane>
    </children>
