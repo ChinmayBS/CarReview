@@ -1,51 +1,65 @@
 package controllers;
 
-import javafx.animation.FadeTransition;
+import com.jfoenix.controls.JFXButton;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.Node;
+import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.util.Duration;
 
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
+public class HomePageController {
 
-public class HomePageController implements Initializable {
+    @FXML
+    private Label dashboardButton;
 
-    @FXML AnchorPane holderPane;
-    AnchorPane home;
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    @FXML
+    private JFXButton homeButton;
 
-        try {
-            createPage();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    @FXML
+    private JFXButton mycarsButton;
+
+    @FXML
+    private JFXButton historyButton;
+
+    @FXML
+    private JFXButton contactButton;
+
+    @FXML
+    private Label totalcarsLabel;
+
+    @FXML
+    private Label welcomeLabel;
+
+    @FXML
+    private ImageView popupButton;
+
+    @FXML
+    private AnchorPane holderPane;
+
+    @FXML
+    void contactUs(ActionEvent event) {
+
     }
-    private void setNode(Node node)
-    {
-        holderPane.getChildren().clear();
-        holderPane.getChildren().add((Node) node);
 
-        FadeTransition ft = new FadeTransition(Duration.millis(1500));
-        ft.setNode(node);
-        ft.setFromValue(0.1);
-        ft.setToValue(1);
-        ft.setCycleCount(1);
-        ft.setAutoReverse(false);
-        ft.play();
+    @FXML
+    void goToHome(ActionEvent event) {
+
     }
 
-    private void createPage() throws IOException {
-        try {
-            home = FXMLLoader.load(getClass().getResource("../fxml/home.fxml"));
-            setNode(home);
-        }catch (IOException e)
-        {
-            e.printStackTrace();
-        }
+    @FXML
+    void myCarsList(ActionEvent event) {
+
     }
+
+    @FXML
+    void myHistory(ActionEvent event) {
+
+    }
+
+    @FXML
+    void popUpWindow(MouseEvent event) {
+
+    }
+
 }
