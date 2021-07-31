@@ -8,7 +8,7 @@ import javafx.scene.Parent;
 
 import java.io.IOException;
 
-public class HomeController extends HomePageController {
+public class MenuController extends HomePageController {
 
     @FXML
     private JFXButton hyundai;
