@@ -1,24 +1,44 @@
 package controllers;
 
 import com.jfoenix.controls.JFXButton;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
-import java.io.IOException;
-
-public class MenuController extends HomePageController {
-
-    @FXML
-    private JFXButton hyundai;
+public class MenuController {
 
     @FXML
-    static void openHyundai(ActionEvent event) throws IOException {
-        System.out.println("HI");
-        //HomePageController.details();
-        //Parent root = FXMLLoader.load(getClass().getResource("../fxml/details.fxml"));
-        //holderPane2.getChildren().add(root);
-    }
+    private VBox menuVBox;
+
+    @FXML
+    private HBox menuHBox1;
+
+    @FXML
+    private JFXButton menuButton1;
+
+    @FXML
+    private ImageView menuImageView1;
+
+    @FXML
+    private JFXButton menuButton2;
+
+    @FXML
+    private ImageView menuImageView2;
+
+    @FXML
+    private HBox menuHBox2;
+
+    @FXML
+    private JFXButton menuButton3;
+
+    @FXML
+    private ImageView menuImageView3;
+
+    @FXML
+    private JFXButton menuButton4;
+
+    @FXML
+    private ImageView menuImageView4;
 
 }

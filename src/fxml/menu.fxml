@@ -5,29 +5,29 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="634.5" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="menuVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="634.5" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
    <children>
-      <HBox prefHeight="246.5" prefWidth="635.0">
+      <HBox fx:id="menuHBox1" prefHeight="246.5" prefWidth="635.0">
          <children>
-            <JFXButton contentDisplay="TOP" prefHeight="233.0" prefWidth="315.0" text="Button">
+            <JFXButton fx:id="menuButton1" contentDisplay="TOP" prefHeight="233.0" prefWidth="315.0" style="-fx-background-color: #6b705c;" text="Button">
                <graphic>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="menuImageView1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                </graphic></JFXButton>
-            <JFXButton contentDisplay="TOP" prefHeight="226.0" prefWidth="316.0" text="Button">
+            <JFXButton fx:id="menuButton2" contentDisplay="TOP" prefHeight="231.0" prefWidth="321.0" style="-fx-background-color: #6b705c;" text="Button">
                <graphic>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="menuImageView2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                </graphic></JFXButton>
          </children>
       </HBox>
-      <HBox prefHeight="246.5" prefWidth="635.0">
+      <HBox fx:id="menuHBox2" prefHeight="246.5" prefWidth="635.0">
          <children>
-            <JFXButton contentDisplay="TOP" prefHeight="226.0" prefWidth="314.0" text="Button">
+            <JFXButton fx:id="menuButton3" contentDisplay="TOP" prefHeight="226.0" prefWidth="314.0" style="-fx-background-color: #6b705c;" text="Button">
                <graphic>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="menuImageView3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                </graphic></JFXButton>
-            <JFXButton contentDisplay="TOP" prefHeight="226.0" prefWidth="331.0">
+            <JFXButton fx:id="menuButton4" contentDisplay="TOP" prefHeight="226.0" prefWidth="331.0" style="-fx-background-color: #6b705c;">
                <graphic>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="menuImageView4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                </graphic></JFXButton>
          </children>
       </HBox>
