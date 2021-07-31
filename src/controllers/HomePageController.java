@@ -52,14 +52,12 @@ public class HomePageController implements Initializable {
 
 
     @FXML
-    //public AnchorPane holderPane;
-    public AnchorPane holderPane1;
-    static public AnchorPane holderPane2;
+    public AnchorPane holderPane;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        //popUp.setVisible(false);
-        //detailsPopup.setVisible(false);
+        popUp.setVisible(false);
     }
 
     @FXML
@@ -70,7 +68,7 @@ public class HomePageController implements Initializable {
     @FXML
     void goToHome(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("../fxml/home.fxml"));
-        holderPane1.getChildren().add(root);
+        holderPane.getChildren().add(root);
     }
 
     @FXML

@@ -86,8 +86,6 @@
                         <JFXButton fx:id="exitButton" layoutX="48.0" layoutY="31.0" onAction="#exitApplication" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #a5a58d;" text="Exit" />
                      </children>
                   </AnchorPane>
-                  <AnchorPane fx:id="holderPane1" layoutX="14.0" layoutY="14.0" prefHeight="425.0" prefWidth="363.0" />
-                  <AnchorPane fx:id="holderpane2" layoutX="388.0" layoutY="74.0" prefHeight="358.0" prefWidth="240.0" />
                </children></AnchorPane>
             <Button fx:id="popupButton" layoutX="759.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#popUpWindow" prefHeight="32.0" prefWidth="22.0" style="-fx-background-color: #6b705c;">
                <cursor>
