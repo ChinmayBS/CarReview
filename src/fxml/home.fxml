@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane layoutX="166.0" layoutY="42.0" prefHeight="357.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+<AnchorPane prefHeight="423.0" prefWidth="363.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
    <children>
-      <JFXButton contentDisplay="TOP" layoutX="27.0" layoutY="39.0" prefHeight="136.0" prefWidth="184.0" style="-fx-background-color: #20B2AA;" text="HYUNDAI" textAlignment="CENTER">
+      <JFXButton contentDisplay="TOP" layoutX="14.0" layoutY="26.0" prefHeight="165.0" prefWidth="156.0" style="-fx-background-color: #20B2AA;" text="HYUNDAI" textAlignment="CENTER">
          <graphic>
-            <ImageView fitHeight="105.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="80.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../resources/icons/hyundai.jpg" />
                </image>
@@ -20,7 +20,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <JFXButton contentDisplay="TOP" layoutX="27.0" layoutY="206.0" prefHeight="136.0" prefWidth="184.0" style="-fx-background-color: #20B2AA;" text="TOYOTA" textAlignment="CENTER">
+      <JFXButton contentDisplay="TOP" layoutX="14.0" layoutY="235.0" prefHeight="165.0" prefWidth="156.0" style="-fx-background-color: #20B2AA;" text="TOYOTA" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -32,9 +32,9 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton contentDisplay="TOP" layoutX="268.0" layoutY="39.0" prefHeight="136.0" prefWidth="184.0" style="-fx-background-color: #20B2AA;" text="MARUTHI" textAlignment="CENTER">
+      <JFXButton contentDisplay="TOP" layoutX="193.0" layoutY="26.0" prefHeight="165.0" prefWidth="156.0" style="-fx-background-color: #20B2AA;" text="MARUTHI" textAlignment="CENTER">
          <graphic>
-            <ImageView fitHeight="105.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="78.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../resources/icons/SUZUKI.jpg" />
                </image>
@@ -44,9 +44,9 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <JFXButton contentDisplay="TOP" layoutX="220.0" layoutY="206.0" prefHeight="136.0" prefWidth="184.0" style="-fx-background-color: #20B2AA;" text="TATA" textAlignment="CENTER">
+      <JFXButton contentDisplay="TOP" layoutX="193.0" layoutY="235.0" prefHeight="165.0" prefWidth="156.0" style="-fx-background-color: #20B2AA;" text="TATA" textAlignment="CENTER">
          <graphic>
-            <ImageView fitHeight="105.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="88.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../resources/icons/tata.jpg" />
                </image>

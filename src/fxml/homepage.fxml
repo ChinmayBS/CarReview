@@ -67,38 +67,39 @@
                   </Label>
                </center>
             </JFXToolbar>
-            <AnchorPane fx:id="holderPane" layoutX="167.0" layoutY="42.0" prefHeight="453.0" prefWidth="634.0" style="-fx-background-color: #F5F5F5;">
+            <AnchorPane fx:id="holderPane" layoutX="167.0" layoutY="42.0" prefHeight="453.0" prefWidth="565.0" style="-fx-background-color: #F5F5F5;">
                <children>
                   <Line endX="543.0" layoutX="91.0" startX="-100.0" />
-                  <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="401.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true" />
-                  <AnchorPane fx:id="popUp" layoutX="447.0" layoutY="23.0" prefHeight="26.0" prefWidth="167.0" style="-fx-background-color: #6b705c;">
+                  <AnchorPane fx:id="popUp" layoutX="499.0" layoutY="1.0" prefHeight="58.0" prefWidth="122.0" style="-fx-background-color: #6b705c;">
                      <children>
-                        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="2.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="4.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../resources/icons/login.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="6.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="6.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../resources/icons/exit.png" />
                            </image>
                         </ImageView>
-                        <JFXButton fx:id="logoutButton" layoutX="48.0" layoutY="9.0" onAction="#logoutScreen" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: #b7b7a4;" text="Logout" />
-                        <JFXButton fx:id="exitButton" layoutX="48.0" layoutY="34.0" onAction="#exitApplication" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: #a5a58d;" text="Exit" />
+                        <JFXButton fx:id="logoutButton" layoutX="48.0" layoutY="2.0" onAction="#logoutScreen" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #b7b7a4;" text="Logout" />
+                        <JFXButton fx:id="exitButton" layoutX="48.0" layoutY="31.0" onAction="#exitApplication" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #a5a58d;" text="Exit" />
                      </children>
                   </AnchorPane>
+                  <AnchorPane fx:id="holderPane1" layoutX="14.0" layoutY="14.0" prefHeight="425.0" prefWidth="363.0" />
+                  <AnchorPane fx:id="holderpane2" layoutX="388.0" layoutY="74.0" prefHeight="358.0" prefWidth="240.0" />
                </children></AnchorPane>
-            <Button fx:id="popupButton" layoutX="762.0" mnemonicParsing="false" onMouseClicked="#popUpWindow" prefHeight="32.0" prefWidth="22.0" style="-fx-background-color: #6b705c;">
+            <Button fx:id="popupButton" layoutX="759.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#popUpWindow" prefHeight="32.0" prefWidth="22.0" style="-fx-background-color: #6b705c;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../resources/icons/threedot.png" />
                      </image>
                   </ImageView>
                </graphic>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
             </Button>
          </children>
       </Pane>
