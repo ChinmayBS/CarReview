@@ -1,34 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox fx:id="menuVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="634.5" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
    <children>
       <HBox fx:id="menuHBox1" prefHeight="246.5" prefWidth="635.0">
          <children>
-            <JFXButton fx:id="menuButton1" contentDisplay="TOP" prefHeight="233.0" prefWidth="315.0" style="-fx-background-color: #6b705c;" text="Button">
+            <JFXButton fx:id="suzukiButton" contentDisplay="TOP" onAction="#openSuzuki" prefHeight="233.0" prefWidth="315.0" style="-fx-background-color: #6b705c;" text="SUZUKI">
                <graphic>
-                  <ImageView fx:id="menuImageView1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-               </graphic></JFXButton>
-            <JFXButton fx:id="menuButton2" contentDisplay="TOP" prefHeight="231.0" prefWidth="321.0" style="-fx-background-color: #6b705c;" text="Button">
+                  <ImageView fx:id="menuImageView1" fitHeight="160.0" fitWidth="241.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/SUZUKI.jpg" />
+                     </image></ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="hyundaiButton" contentDisplay="TOP" onAction="#openHyundai" prefHeight="231.0" prefWidth="321.0" style="-fx-background-color: #6b705c;" text="HYUNDAI">
                <graphic>
-                  <ImageView fx:id="menuImageView2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-               </graphic></JFXButton>
+                  <ImageView fx:id="menuImageView2" fitHeight="138.0" fitWidth="242.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/hyundai.jpg" />
+                     </image></ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></JFXButton>
          </children>
       </HBox>
       <HBox fx:id="menuHBox2" prefHeight="246.5" prefWidth="635.0">
          <children>
-            <JFXButton fx:id="menuButton3" contentDisplay="TOP" prefHeight="226.0" prefWidth="314.0" style="-fx-background-color: #6b705c;" text="Button">
+            <JFXButton fx:id="toyotaButton" contentDisplay="TOP" onAction="#openToyota" prefHeight="226.0" prefWidth="314.0" style="-fx-background-color: #6b705c;" text="TOYOTA">
                <graphic>
-                  <ImageView fx:id="menuImageView3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-               </graphic></JFXButton>
-            <JFXButton fx:id="menuButton4" contentDisplay="TOP" prefHeight="226.0" prefWidth="331.0" style="-fx-background-color: #6b705c;">
+                  <ImageView fx:id="menuImageView3" fitHeight="137.0" fitWidth="212.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/toyota.jpg" />
+                     </image></ImageView>
+               </graphic>
+               <font>
+                  <Font size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="tataButton" contentDisplay="TOP" onAction="#openTata" prefHeight="226.0" prefWidth="331.0" style="-fx-background-color: #6b705c;" text="TATA">
                <graphic>
-                  <ImageView fx:id="menuImageView4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-               </graphic></JFXButton>
+                  <ImageView fx:id="menuImageView4" fitHeight="164.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/tata.jpg" />
+                     </image></ImageView>
+               </graphic>
+               <font>
+                  <Font size="20.0" />
+               </font></JFXButton>
          </children>
       </HBox>
    </children>

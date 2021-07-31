@@ -1,6 +1,7 @@
 package controllers;
 
 import com.jfoenix.controls.JFXButton;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
@@ -15,13 +16,13 @@ public class MenuController {
     private HBox menuHBox1;
 
     @FXML
-    private JFXButton menuButton1;
+    private JFXButton suzukiButton;
 
     @FXML
     private ImageView menuImageView1;
 
     @FXML
-    private JFXButton menuButton2;
+    private JFXButton hyundaiButton;
 
     @FXML
     private ImageView menuImageView2;
@@ -30,15 +31,35 @@ public class MenuController {
     private HBox menuHBox2;
 
     @FXML
-    private JFXButton menuButton3;
+    private JFXButton toyotaButton;
 
     @FXML
     private ImageView menuImageView3;
 
     @FXML
-    private JFXButton menuButton4;
+    private JFXButton tataButton;
 
     @FXML
     private ImageView menuImageView4;
+
+    @FXML
+    void openHyundai(ActionEvent event) {
+
+    }
+
+    @FXML
+    void openSuzuki(ActionEvent event) {
+
+    }
+
+    @FXML
+    void openTata(ActionEvent event) {
+
+    }
+
+    @FXML
+    void openToyota(ActionEvent event) {
+
+    }
 
 }
