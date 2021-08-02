@@ -1,5 +1,6 @@
 package controllers;
 
+import backend.CarDetailsLoader;
 import backend.LoadComponents;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
@@ -11,6 +12,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class DetailController extends LoadComponents implements Initializable {
@@ -71,7 +73,32 @@ public class DetailController extends LoadComponents implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         contactDetails.setVisible(false);
+
+        String currCarName="oldolxcar";
+        CarDetailsLoader carDetailsLoader=new CarDetailsLoader("src/resources/files/cardetails.csv");
+        ArrayList<String[] > cars=carDetailsLoader.getCarDetails();
+        for(String[] entity:cars){
+            if(entity[0].equals(currCarName)){
+                setTextFields(entity);
+            }
+        }
+
+    }
+
+    private void setTextFields(String[] entity){
+        carName.setText(entity[0]);
+        brand.setText(entity[1]);
+        model.setText(entity[2]);
+        variant.setText(entity[3]);
+        year.setText(entity[4]);
+        fuel.setText(entity[5]);
+        transmission.setText(entity[6]);
+        kmDriven.setText(entity[7]);
+        noOfOwners.setText(entity[8]);
+        message.setText(entity[9]);
+        whatsapp.setText(entity[10]);
     }
 
     @FXML
@@ -81,12 +108,7 @@ public class DetailController extends LoadComponents implements Initializable {
 
     @FXML
     void contactOwner(ActionEvent event) {
-        if(contactDetails.isVisible()){
-            contactDetails.setVisible(false);
-        }
-        else{
-            contactDetails.setVisible(true);
-        }
+        contactDetails.setVisible(!contactDetails.isVisible());
     }
 
     @FXML
