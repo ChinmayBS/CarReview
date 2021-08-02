@@ -9,31 +9,31 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="809.0" style="-fx-background-color: #6b705c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Detail">
+<AnchorPane prefHeight="500.0" prefWidth="809.0" style="-fx-background-color: #6b705c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DetailController">
    <children>
-      <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="659.0" layoutY="449.0" prefHeight="30.0" prefWidth="111.0" style="-fx-background-color: #20B2AA;" text="CONTACT OWNER">
+      <JFXButton fx:id="contactOwnerButton" alignment="CENTER" contentDisplay="CENTER" layoutX="659.0" layoutY="449.0" onAction="#contactOwner" prefHeight="30.0" prefWidth="111.0" style="-fx-background-color: #20B2AA;" text="CONTACT OWNER">
          <font>
             <Font name="System Bold" size="9.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="516.0" layoutY="449.0" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #ccd5ae;" text="ADD ">
+      <JFXButton fx:id="addToCartButton" layoutX="516.0" layoutY="449.0" onAction="#addToCart" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #ccd5ae;" text="ADD ">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
       </JFXButton>
-      <ImageView fitHeight="319.0" fitWidth="427.0" layoutX="32.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imageView" fitHeight="319.0" fitWidth="427.0" layoutX="32.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../resources/images/hyundai1.jpg" />
          </image>
       </ImageView>
       <AnchorPane layoutX="-2.0" prefHeight="40.0" prefWidth="838.0">
          <children>
-            <Label alignment="CENTER" layoutX="174.0" layoutY="3.0" prefHeight="38.0" prefWidth="478.0" text="Hyundai i20 1.4 Sportz, 2012, Petrol">
+            <Label fx:id="carName" alignment="CENTER" layoutX="174.0" layoutY="3.0" prefHeight="38.0" prefWidth="478.0" text="Hyundai i20 1.4 Sportz, 2012, Petrol">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="802.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="exitButton" fitHeight="24.0" fitWidth="22.0" layoutX="802.0" layoutY="9.0" onMouseClicked="#goToHome" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../resources/icons/back.png" />
                </image>
@@ -47,7 +47,7 @@
                <children>
                   <Label prefHeight="40.0" prefWidth="110.0" text="Brand" />
                   <Label prefHeight="40.0" prefWidth="110.0" text="Model" />
-                  <Label prefHeight="40.0" prefWidth="110.0" text="Varient" />
+                  <Label prefHeight="40.0" prefWidth="110.0" text="Variant" />
                   <Label prefHeight="40.0" prefWidth="110.0" text="Year" />
                   <Label prefHeight="40.0" prefWidth="110.0" text="Fuel" />
                   <Label prefHeight="40.0" prefWidth="110.0" text="Transmission" />
@@ -57,19 +57,19 @@
             </VBox>
             <VBox prefHeight="316.0" prefWidth="167.0">
                <children>
-                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
-                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
-                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
-                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
-                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
-                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
-                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
-                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label fx:id="brand" prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label fx:id="model" prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label fx:id="variant" prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label fx:id="year" prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label fx:id="fuel" prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label fx:id="transmission" prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label fx:id="kmDriven" prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label fx:id="noOfOwners" prefHeight="40.0" prefWidth="173.0" text="Label" />
                </children>
             </VBox>
          </children>
       </HBox>
-      <HBox layoutX="90.0" layoutY="422.0" prefHeight="54.0" prefWidth="268.0">
+      <HBox fx:id="contactDetails" layoutX="90.0" layoutY="422.0" prefHeight="54.0" prefWidth="268.0">
          <children>
             <VBox prefHeight="69.0" prefWidth="100.0">
                <children>
@@ -79,13 +79,13 @@
             </VBox>
             <VBox prefHeight="54.0" prefWidth="168.0">
                <children>
-                  <Label prefHeight="28.0" prefWidth="172.0" text="987654789" />
-                  <Label prefHeight="27.0" prefWidth="174.0" text="Omar" />
+                  <Label fx:id="whatsapp" prefHeight="28.0" prefWidth="172.0" text="987654789" />
+                  <Label fx:id="message" prefHeight="27.0" prefWidth="174.0" text="Omar" />
                </children>
             </VBox>
          </children>
       </HBox>
-      <JFXButton layoutX="441.0" layoutY="233.0" rotate="90.0" />
-      <JFXButton layoutX="-12.0" layoutY="233.0" rotate="90.0" text="Button" />
+      <JFXButton fx:id="rightButton" layoutX="441.0" layoutY="233.0" rotate="90.0" />
+      <JFXButton fx:id="leftButton" layoutX="-12.0" layoutY="233.0" rotate="90.0" text="Button" />
    </children>
 </AnchorPane>
