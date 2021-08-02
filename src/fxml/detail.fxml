@@ -5,30 +5,87 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="358.0" prefWidth="240.0" style="-fx-background-color: #6b705c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Detail">
+<AnchorPane prefHeight="500.0" prefWidth="809.0" style="-fx-background-color: #6b705c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Detail">
    <children>
-      <Label layoutX="12.0" layoutY="14.0" prefHeight="28.0" prefWidth="216.0" text="Hyundai i20 1.4 Sportz, 2012, Petrol">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
-      <JFXButton alignment="CENTER_RIGHT" layoutX="106.0" layoutY="321.0" prefHeight="23.0" prefWidth="107.0" style="-fx-background-color: #20B2AA;" text="CONTACT OWNER">
+      <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="659.0" layoutY="449.0" prefHeight="30.0" prefWidth="111.0" style="-fx-background-color: #20B2AA;" text="CONTACT OWNER">
          <font>
             <Font name="System Bold" size="9.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="28.0" layoutY="321.0" prefHeight="15.0" prefWidth="48.0" style="-fx-background-color: #ccd5ae;" text="ADD ">
+      <JFXButton layoutX="516.0" layoutY="449.0" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #ccd5ae;" text="ADD ">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
       </JFXButton>
-      <ImageView fitHeight="147.0" fitWidth="107.0" layoutX="14.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="324.0" fitWidth="435.0" layoutX="32.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../resources/images/hyundai1.jpg" />
          </image>
       </ImageView>
+      <AnchorPane layoutX="-2.0" prefHeight="40.0" prefWidth="838.0">
+         <children>
+            <Label alignment="CENTER" layoutX="174.0" layoutY="3.0" prefHeight="38.0" prefWidth="478.0" text="Hyundai i20 1.4 Sportz, 2012, Petrol">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="802.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/back.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="547.0" layoutY="51.0" prefHeight="24.0" prefWidth="187.0" text="Details" />
+      <HBox layoutX="510.0" layoutY="85.0" prefHeight="330.0" prefWidth="276.0">
+         <children>
+            <VBox prefHeight="307.0" prefWidth="110.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="110.0" text="Brand" />
+                  <Label prefHeight="40.0" prefWidth="110.0" text="Model" />
+                  <Label prefHeight="40.0" prefWidth="110.0" text="Varient" />
+                  <Label prefHeight="40.0" prefWidth="110.0" text="Year" />
+                  <Label prefHeight="40.0" prefWidth="110.0" text="Fuel" />
+                  <Label prefHeight="40.0" prefWidth="110.0" text="Transmission" />
+                  <Label prefHeight="40.0" prefWidth="110.0" text="K M Driven" />
+                  <Label prefHeight="40.0" prefWidth="110.0" text="No Of Owners" />
+               </children>
+            </VBox>
+            <VBox prefHeight="316.0" prefWidth="167.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
+                  <Label prefHeight="40.0" prefWidth="173.0" text="Label" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="90.0" layoutY="422.0" prefHeight="54.0" prefWidth="268.0">
+         <children>
+            <VBox prefHeight="69.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="100.0" text="Whatsapp" />
+                  <Label prefHeight="28.0" prefWidth="100.0" text="Facebook" />
+               </children>
+            </VBox>
+            <VBox prefHeight="54.0" prefWidth="168.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="172.0" text="987654789" />
+                  <Label prefHeight="27.0" prefWidth="174.0" text="Omar" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <JFXButton layoutX="449.0" layoutY="235.0" rotate="90.0" />
+      <JFXButton layoutX="-12.0" layoutY="236.0" rotate="90.0" text="Button" />
    </children>
 </AnchorPane>
