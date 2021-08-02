@@ -1,13 +1,14 @@
 package controllers;
 
+import backend.LoadComponents;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-public class MenuController {
+public class MenuController extends LoadComponents {
+
 
     @FXML
     private VBox menuVBox;
@@ -18,48 +19,40 @@ public class MenuController {
     @FXML
     private JFXButton suzukiButton;
 
-    @FXML
-    private ImageView menuImageView1;
 
     @FXML
     private JFXButton hyundaiButton;
 
-    @FXML
-    private ImageView menuImageView2;
-
-    @FXML
-    private HBox menuHBox2;
 
     @FXML
     private JFXButton toyotaButton;
 
-    @FXML
-    private ImageView menuImageView3;
 
     @FXML
     private JFXButton tataButton;
 
     @FXML
-    private ImageView menuImageView4;
-
-    @FXML
-    void openHyundai(ActionEvent event) {
-
+    void openHyundai(ActionEvent event)  {
+        LoadComponents.closeWindow(hyundaiButton);
+        LoadComponents.displayWindow("../fxml/hyundai.fxml");
     }
 
     @FXML
     void openSuzuki(ActionEvent event) {
-
+        LoadComponents.closeWindow(suzukiButton);
+        LoadComponents.displayWindow("../fxml/maruthi.fxml");
     }
 
     @FXML
     void openTata(ActionEvent event) {
-
+        LoadComponents.closeWindow(tataButton);
+        LoadComponents.displayWindow("../fxml/tata.fxml");
     }
 
     @FXML
-    void openToyota(ActionEvent event) {
-
+    void openToyota(ActionEvent event)  {
+        LoadComponents.closeWindow(tataButton);
+        LoadComponents.displayWindow("../fxml/toyota.fxml");
     }
 
 }

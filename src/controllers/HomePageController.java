@@ -95,7 +95,7 @@ public class HomePageController implements Initializable {
 
         Stage stage=new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("../fxml/login.fxml"));
-        // Parent root = FXMLLoader.load(getClass().getResource("../fxml/signup.fxml"));
+        // Parent root = FXMLLoader.displayWindow(getClass().getResource("../fxml/signup.fxml"));
         stage.setTitle("Car Review");
         stage.setResizable(false);
         stage.setScene(new Scene(root, 800, 500));
