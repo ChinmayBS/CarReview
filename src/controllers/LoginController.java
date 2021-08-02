@@ -1,6 +1,7 @@
 package controllers;
 
 import backend.CSVLoader;
+import backend.LoginDetailsLoader;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXCheckBox;
 import com.jfoenix.controls.JFXPasswordField;
@@ -63,8 +64,8 @@ public class LoginController implements Initializable {
     @FXML
     void login(ActionEvent event) throws IOException {
 
-        CSVLoader csvLoader = new CSVLoader();
-        HashMap<String,String> loginMap=csvLoader.loadLoginDetails();
+        CSVLoader csvLoader = new LoginDetailsLoader("src/resources/files/details.csv");
+        HashMap<String,String> loginMap= ((LoginDetailsLoader) csvLoader).loadLoginDetails();
 
         String username,password;
         if(validateFields()) {

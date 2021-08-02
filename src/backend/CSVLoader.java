@@ -7,48 +7,57 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class CSVLoader {
+    FileReader fileReader;
+
     private ArrayList<String>  CSVString = new ArrayList<>();
-    private HashMap<String,String> loginMap;
+
+    public void setCSVString(ArrayList<String> CSVString) {
+        this.CSVString = CSVString;
+    }
 
     public ArrayList<String> getCSVString() {
         return CSVString;
     }
 
-    public CSVLoader() throws IOException {
-        FileReader fileReader = null; //read csv file
+    public CSVLoader(String path) {
+       fileReader = null; //read csv file
         try {
-            fileReader = new FileReader("src/resources/files/details.csv");
+            fileReader = new FileReader(path);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    protected void readCSV(){
         BufferedReader csvReader = new BufferedReader(fileReader);
         String row;
-        while((row= csvReader.readLine())!=null){
-            CSVString.add(row);
+        while(true){
+            try {
+                if((row= csvReader.readLine())!=null) {
+                    CSVString.add(row);
+                }
+                else {
+                    break;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             //System.out.println(row);
         }
     }
 
-    public HashMap<String,String> loadLoginDetails(){  //
-        loginMap =new HashMap<>();
-         for(String row:CSVString){
-             String[]  detail=row.split(",");
-             loginMap.put(detail[0],detail[1]);
-         }
-         return loginMap;
-
-    }
-
-    public void updateSignupDetails(String csvData) throws IOException {
+    protected void writeCSV(String csvData){
+        readCSV();
         this.getCSVString().add(csvData);
-        FileWriter fileWriter = new FileWriter("src/resources/files/details.csv");
-
-        for(String row:getCSVString()){
-            fileWriter.write(row+"\n");
+        try {
+            FileWriter fileWriter=new FileWriter("src/resources/files/details.csv");
+            for(String row:getCSVString()){
+                fileWriter.write(row+"\n");
+            }
+            fileWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        fileWriter.close();
-
     }
-
 
 }

@@ -1,6 +1,7 @@
 package controllers;
 
 import backend.CSVLoader;
+import backend.LoginDetailsLoader;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXRadioButton;
@@ -136,8 +137,8 @@ public class SignupController implements Initializable {
             else{
                 gender="female";
             }
-            CSVLoader csvLoader = new CSVLoader();
-            csvLoader.updateSignupDetails(username+","+password+","+gender+","+location+","+0);
+            CSVLoader csvLoader = new LoginDetailsLoader("src/resources/files/details.csv");
+            ((LoginDetailsLoader) csvLoader).updateSignupDetails(username+","+password+","+gender+","+location+","+0);
             labelMessage.setText("Account Created Successfully");                 //display message on screen that account is successfully created
 
             usernameText.clear();                    //clear the fields after successful sign up
