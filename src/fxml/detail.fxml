@@ -21,7 +21,7 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </JFXButton>
-      <ImageView fitHeight="324.0" fitWidth="435.0" layoutX="32.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="319.0" fitWidth="427.0" layoutX="32.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../resources/images/hyundai1.jpg" />
          </image>
@@ -85,7 +85,7 @@
             </VBox>
          </children>
       </HBox>
-      <JFXButton layoutX="449.0" layoutY="235.0" rotate="90.0" />
-      <JFXButton layoutX="-12.0" layoutY="236.0" rotate="90.0" text="Button" />
+      <JFXButton layoutX="441.0" layoutY="233.0" rotate="90.0" />
+      <JFXButton layoutX="-12.0" layoutY="233.0" rotate="90.0" text="Button" />
    </children>
 </AnchorPane>

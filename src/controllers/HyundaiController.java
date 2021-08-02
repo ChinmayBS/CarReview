@@ -69,7 +69,8 @@ public class HyundaiController extends LoadComponents {
 
     @FXML
     void goToCar1(ActionEvent event) {
-
+        LoadComponents.closeWindow(carSpace1);
+        LoadComponents.displayWindow("../fxml/detail.fxml");
     }
 
 }
