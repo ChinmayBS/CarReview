@@ -25,7 +25,7 @@ public class HomePageController implements Initializable {
     public JFXButton exitButton;
     public AnchorPane popUp;
     @FXML
-    private Label dashboardButton;
+    private  Label dashboardButton;
 
     @FXML
     private JFXButton homeButton;
@@ -50,12 +50,18 @@ public class HomePageController implements Initializable {
 
 
     @FXML
-    public AnchorPane holderPane;
+    private AnchorPane holderPane;
 
+    private static int cartSize=0;
+    public static void increaseCartCartSize(){
+        cartSize+=1;
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         popUp.setVisible(false);
+        int currCartValue=Integer.parseInt(totalcarsLabel.getText());
+        totalcarsLabel.setText(String.valueOf(currCartValue+cartSize));
     }
 
     @FXML

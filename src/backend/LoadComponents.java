@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class LoadComponents {
+    static private String carName;
     protected static Parent getRoot(String path){
         Parent root= null;
         try {
@@ -33,5 +34,12 @@ public class LoadComponents {
         root.getScene().getWindow().hide();
     }
 
+    public static void setUniqueCarName(String carName){
+       LoadComponents.carName=carName;
+    }
+
+    public static String getUniqueCarName(){
+        return carName;
+    }
 
 }

@@ -20,7 +20,7 @@
          </children></AnchorPane>
       <HBox fx:id="menuHBox1" prefHeight="230.0" prefWidth="635.0">
          <children>
-            <JFXButton fx:id="carSpace1" contentDisplay="TOP" onAction="#goToCar1" prefHeight="231.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Hyundai i20 1.4 Sportz, 2012, Petrol">
+            <JFXButton fx:id="carSpace1" contentDisplay="TOP" onAction="#goToCar1" prefHeight="231.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="oldolxcar">
                <graphic>
                   <ImageView fx:id="menuImageView1" fitHeight="160.0" fitWidth="241.0" pickOnBounds="true" preserveRatio="true">
                      <image>

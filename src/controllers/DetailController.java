@@ -5,12 +5,16 @@ import backend.LoadComponents;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -71,12 +75,16 @@ public class DetailController extends LoadComponents implements Initializable {
     @FXML
     HBox contactDetails;
 
+    ArrayList<Image> images;
+
+    int i=0;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         contactDetails.setVisible(false);
-
-        String currCarName="oldolxcar";
+        String currCarName=LoadComponents.getUniqueCarName();
+        System.out.println(LoadComponents.getUniqueCarName());
         CarDetailsLoader carDetailsLoader=new CarDetailsLoader("src/resources/files/cardetails.csv");
         ArrayList<String[] > cars=carDetailsLoader.getCarDetails();
         for(String[] entity:cars){
@@ -84,7 +92,10 @@ public class DetailController extends LoadComponents implements Initializable {
                 setTextFields(entity);
             }
         }
-
+        images=new ArrayList<>();
+        images.add(new Image("resources/images/hyundai1.jpg"));
+        images.add(new Image("resources/images/hyundai2.jpg"));
+        images.add(new Image("resources/images/hyundai3.jpg"));
     }
 
     private void setTextFields(String[] entity){
@@ -103,7 +114,7 @@ public class DetailController extends LoadComponents implements Initializable {
 
     @FXML
     void addToCart(ActionEvent event) {
-
+        HomePageController.increaseCartCartSize();
     }
 
     @FXML
@@ -115,5 +126,16 @@ public class DetailController extends LoadComponents implements Initializable {
     void goToHome(MouseEvent event) {
         LoadComponents.closeWindow(exitButton);
         LoadComponents.displayWindow("../fxml/homepage.fxml");
+    }
+    public void previousImage(ActionEvent actionEvent) {
+        i=(i+1)%images.size();
+        System.out.println(i);
+        imageView.setImage(images.get(i));
+    }
+
+    public void nextImage(ActionEvent actionEvent) {
+        i=(i-1+images.size())%images.size();
+        System.out.println(i);
+        imageView.setImage(images.get(i));
     }
 }

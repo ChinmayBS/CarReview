@@ -69,6 +69,8 @@ public class HyundaiController extends LoadComponents {
 
     @FXML
     void goToCar1(ActionEvent event) {
+        System.out.println(carSpace1.getText());
+        LoadComponents.setUniqueCarName(carSpace1.getText());
         LoadComponents.closeWindow(carSpace1);
         LoadComponents.displayWindow("../fxml/detail.fxml");
     }
