@@ -49,11 +49,11 @@
       </ImageView>
       <Label layoutX="289.0" layoutY="89.0" prefHeight="58.0" prefWidth="72.0" text="Car" textFill="#3bb2d0">
          <font>
-            <Font name="System Bold" size="40.0" />
+            <Font name="System Bold" size="28.0" />
          </font></Label>
       <Label layoutX="363.0" layoutY="89.0" prefHeight="58.0" prefWidth="140.0" text="Zone">
          <font>
-            <Font name="System Bold" size="40.0" />
+            <Font name="System Bold" size="28.0" />
          </font></Label>
       <Label fx:id="labelMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="202.0" layoutY="146.0" prefHeight="26.0" prefWidth="341.0" text="Welcome to sign up page" />
    </children>

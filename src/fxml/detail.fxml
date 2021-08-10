@@ -11,12 +11,12 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #6b705c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DetailController">
    <children>
-      <JFXButton fx:id="contactOwnerButton" alignment="CENTER" contentDisplay="CENTER" layoutX="659.0" layoutY="449.0" onAction="#contactOwner" prefHeight="30.0" prefWidth="111.0" style="-fx-background-color: #20B2AA;" text="CONTACT OWNER">
+      <JFXButton fx:id="contactOwnerButton" alignment="CENTER" contentDisplay="CENTER" layoutX="644.0" layoutY="449.0" onAction="#contactOwner" prefHeight="30.0" prefWidth="111.0" style="-fx-background-color: #20B2AA;" text="CONTACT OWNER">
          <font>
             <Font name="System Bold" size="9.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="addToCartButton" layoutX="516.0" layoutY="449.0" onAction="#addToCart" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #ccd5ae;" text="ADD ">
+      <JFXButton fx:id="addToCartButton" layoutX="510.0" layoutY="449.0" onAction="#addToCart" prefHeight="30.0" prefWidth="111.0" style="-fx-background-color: #ccd5ae;" text="ADD TO CART">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
@@ -85,7 +85,8 @@
             </VBox>
          </children>
       </HBox>
-      <JFXButton fx:id="rightButton" layoutX="441.0" layoutY="233.0" onAction="#nextImage" rotate="90.0" style="-fx-background-color: #ff0000;" text="Button" />
+      <JFXButton fx:id="rightButton" layoutX="441.0" layoutY="237.0" onAction="#nextImage" prefHeight="26.0" prefWidth="62.0" rotate="90.0" style="-fx-background-color: #ff0000;" text="Button" />
       <JFXButton fx:id="leftButton" layoutX="-12.0" layoutY="233.0" onAction="#previousImage" rotate="90.0" style="-fx-background-color: #ff0000;" text="Button" />
+      <Label fx:id="addToCartLabel" alignment="CENTER" layoutX="510.0" layoutY="411.0" prefHeight="22.0" prefWidth="223.0" text="Added to Cart Sucessfully" />
    </children>
 </AnchorPane>
