@@ -30,7 +30,7 @@
          <children>
             <Label fx:id="carName" alignment="CENTER" layoutX="174.0" layoutY="3.0" prefHeight="38.0" prefWidth="478.0" text="Hyundai i20 1.4 Sportz, 2012, Petrol">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
             <ImageView fx:id="exitButton" fitHeight="24.0" fitWidth="22.0" layoutX="802.0" layoutY="9.0" onMouseClicked="#goToHome" pickOnBounds="true" preserveRatio="true">
@@ -40,7 +40,10 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <Label alignment="CENTER" layoutX="547.0" layoutY="51.0" prefHeight="24.0" prefWidth="193.0" text="Details" />
+      <Label alignment="CENTER" layoutX="540.0" layoutY="51.0" prefHeight="24.0" prefWidth="193.0" text="Car Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
       <HBox layoutX="510.0" layoutY="85.0" prefHeight="330.0" prefWidth="276.0">
          <children>
             <VBox prefHeight="307.0" prefWidth="110.0">
@@ -85,8 +88,8 @@
             </VBox>
          </children>
       </HBox>
-      <JFXButton fx:id="rightButton" layoutX="441.0" layoutY="237.0" onAction="#nextImage" prefHeight="26.0" prefWidth="62.0" rotate="90.0" style="-fx-background-color: #ff0000;" text="Button" />
-      <JFXButton fx:id="leftButton" layoutX="-12.0" layoutY="233.0" onAction="#previousImage" rotate="90.0" style="-fx-background-color: #ff0000;" text="Button" />
+      <JFXButton fx:id="rightButton" contentDisplay="GRAPHIC_ONLY" layoutX="391.0" layoutY="254.0" onAction="#nextImage" prefHeight="26.0" prefWidth="111.0" rotate="90.0" style="-fx-background-color: #000000;" text="Button" />
+      <JFXButton fx:id="leftButton" contentDisplay="GRAPHIC_ONLY" layoutX="-10.0" layoutY="233.0" onAction="#previousImage" prefHeight="26.0" prefWidth="111.0" rotate="90.0" style="-fx-background-color: #000000;" text="Button" />
       <Label fx:id="addToCartLabel" alignment="CENTER" layoutX="510.0" layoutY="411.0" prefHeight="22.0" prefWidth="223.0" text="Added to Cart Sucessfully" />
    </children>
 </AnchorPane>
