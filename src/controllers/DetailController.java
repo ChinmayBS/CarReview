@@ -105,8 +105,8 @@ public class DetailController extends LoadComponents implements Initializable {
         transmission.setText(entity[6]);
         kmDriven.setText(entity[7]);
         noOfOwners.setText(entity[8]);
-        message.setText(entity[9]);
-        whatsapp.setText(entity[10]);
+        whatsapp.setText(entity[9]);
+        message.setText(entity[10]);
         images=new ArrayList<>();
         for(int i=11;i<15;i++){
             images.add(new Image(entity[i]));

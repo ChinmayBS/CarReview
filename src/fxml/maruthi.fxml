@@ -21,7 +21,7 @@
       </AnchorPane>
       <HBox fx:id="menuHBox1" prefHeight="230.0" prefWidth="635.0">
          <children>
-            <JFXButton fx:id="carSpace1" contentDisplay="TOP" onAction="#goToCar1" prefHeight="231.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Maruthi Eeco">
+            <JFXButton fx:id="carSpace1" contentDisplay="TOP" onAction="#goToCar1" prefHeight="231.0" prefWidth="400.0" style="-fx-background-color: #b7b7a4;" text="Maruthi Eeco">
                <graphic>
                   <ImageView fx:id="menuImageView1" fitHeight="168.0" fitWidth="228.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -33,7 +33,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="carSpace2" contentDisplay="TOP" onAction="#goToCar2" prefHeight="234.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Maruthi Celerio">
+            <JFXButton fx:id="carSpace2" contentDisplay="TOP" onAction="#goToCar2" prefHeight="234.0" prefWidth="400.0" style="-fx-background-color: #a5a58d;" text="Maruthi Celerio">
                <graphic>
                   <ImageView fx:id="menuImageView2" fitHeight="156.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -49,7 +49,7 @@
       </HBox>
       <HBox fx:id="menuHBox2" prefHeight="230.0" prefWidth="635.0">
          <children>
-            <JFXButton fx:id="carSpace3" contentDisplay="TOP" onAction="#goToCar3" prefHeight="237.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Maruthi Ciaz">
+            <JFXButton fx:id="carSpace3" contentDisplay="TOP" onAction="#goToCar3" prefHeight="237.0" prefWidth="400.0" style="-fx-background-color: #a5a58d;" text="Maruthi Ciaz">
                <graphic>
                   <ImageView fx:id="menuImageView3" fitHeight="151.0" fitWidth="223.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -61,7 +61,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="carSpace4" contentDisplay="TOP" onAction="#goToCar4" prefHeight="235.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Maruthi Baleno">
+            <JFXButton fx:id="carSpace4" contentDisplay="TOP" onAction="#goToCar4" prefHeight="235.0" prefWidth="400.0" style="-fx-background-color: #b7b7a4;" text="Maruthi Baleno">
                <graphic>
                   <ImageView fx:id="menuImageView4" fitHeight="165.0" fitWidth="242.0" pickOnBounds="true" preserveRatio="true">
                      <image>
