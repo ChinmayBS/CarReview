@@ -23,7 +23,7 @@
       </JFXButton>
       <ImageView fx:id="imageView" fitHeight="319.0" fitWidth="427.0" layoutX="32.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/images/hyundai1.jpg" />
+            <Image url="@../resources/images/hyundai1a.jpg" />
          </image>
       </ImageView>
       <AnchorPane layoutX="-2.0" prefHeight="40.0" prefWidth="838.0">

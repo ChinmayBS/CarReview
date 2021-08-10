@@ -24,7 +24,7 @@
                <graphic>
                   <ImageView fx:id="menuImageView1" fitHeight="160.0" fitWidth="241.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../resources/images/hyundai1.jpg" />
+                        <Image url="@../resources/images/hyundai1a.jpg" />
                      </image>
                   </ImageView>
                </graphic>
@@ -36,7 +36,7 @@
                <graphic>
                   <ImageView fx:id="menuImageView2" fitHeight="138.0" fitWidth="242.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../resources/images/hyundai2.jpg" />
+                        <Image url="@../resources/images/hyundai2a.jpg" />
                      </image>
                   </ImageView>
                </graphic>
@@ -52,7 +52,7 @@
                <graphic>
                   <ImageView fx:id="menuImageView3" fitHeight="137.0" fitWidth="212.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../resources/images/hyundai3.jpg" />
+                        <Image url="@../resources/images/hyundai3a.jpg" />
                      </image>
                   </ImageView>
                </graphic>
@@ -64,7 +64,7 @@
                <graphic>
                   <ImageView fx:id="menuImageView4" fitHeight="164.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../resources/images/hyundai4.jpg" />
+                        <Image url="@../resources/images/hyundai4a.jpg" />
                      </image>
                   </ImageView>
                </graphic>

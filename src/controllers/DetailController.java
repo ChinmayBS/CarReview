@@ -93,9 +93,9 @@ public class DetailController extends LoadComponents implements Initializable {
             }
         }
         images=new ArrayList<>();
-        images.add(new Image("resources/images/hyundai1.jpg"));
-        images.add(new Image("resources/images/hyundai2.jpg"));
-        images.add(new Image("resources/images/hyundai3.jpg"));
+        images.add(new Image("resources/images/hyundai1a.jpg"));
+        images.add(new Image("resources/images/hyundai1b.jpg"));
+        images.add(new Image("resources/images/hyundai1c.jpg"));
     }
 
     private void setTextFields(String[] entity){
