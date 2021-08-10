@@ -21,9 +21,9 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </JFXButton>
-      <ImageView fx:id="imageView" fitHeight="319.0" fitWidth="427.0" layoutX="32.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imageView" fitHeight="319.0" fitWidth="432.0" layoutX="32.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../resources/images/hyundai1a.jpg" />
+            <Image url="@../resources/images/hyundai2b.jpg" />
          </image>
       </ImageView>
       <AnchorPane layoutX="-2.0" prefHeight="40.0" prefWidth="838.0">
@@ -88,8 +88,22 @@
             </VBox>
          </children>
       </HBox>
-      <JFXButton fx:id="rightButton" contentDisplay="GRAPHIC_ONLY" layoutX="391.0" layoutY="254.0" onAction="#nextImage" prefHeight="26.0" prefWidth="111.0" rotate="90.0" style="-fx-background-color: #000000;" text="Button" />
-      <JFXButton fx:id="leftButton" contentDisplay="GRAPHIC_ONLY" layoutX="-10.0" layoutY="233.0" onAction="#previousImage" prefHeight="26.0" prefWidth="111.0" rotate="90.0" style="-fx-background-color: #000000;" text="Button" />
+      <JFXButton fx:id="rightButton" contentDisplay="GRAPHIC_ONLY" layoutX="338.0" layoutY="236.0" onAction="#nextImage" prefHeight="40.0" prefWidth="201.0" rotate="90.0" style="-fx-background-color: #000000;" text="Button">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/right.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="leftButton" contentDisplay="GRAPHIC_ONLY" layoutX="-48.0" layoutY="236.0" onAction="#previousImage" prefHeight="40.0" prefWidth="201.0" rotate="90.0" style="-fx-background-color: #000000;" text="Button">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/left.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
       <Label fx:id="addToCartLabel" alignment="CENTER" layoutX="510.0" layoutY="411.0" prefHeight="22.0" prefWidth="223.0" text="Added to Cart Sucessfully" />
    </children>
 </AnchorPane>
