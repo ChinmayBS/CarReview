@@ -21,6 +21,7 @@ import java.util.ResourceBundle;
 
 public class DetailController extends LoadComponents implements Initializable {
 
+    public Label addToCartLabel;
     @FXML
     private JFXButton contactOwnerButton;
 
@@ -93,6 +94,7 @@ public class DetailController extends LoadComponents implements Initializable {
             }
         }
         imageView.setImage(images.get(0));
+        addToCartLabel.setVisible(false);
     }
 
     private void setTextFields(String[] entity){
@@ -117,6 +119,7 @@ public class DetailController extends LoadComponents implements Initializable {
     @FXML
     void addToCart(ActionEvent event) {
         History.AddCarsToCart(carName.getText());
+        addToCartLabel.setVisible(true);
         //HomePageController.increaseCartCartSize();
     }
 
