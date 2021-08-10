@@ -21,11 +21,11 @@
       </AnchorPane>
       <HBox fx:id="menuHBox1" prefHeight="230.0" prefWidth="635.0">
          <children>
-            <JFXButton fx:id="carSpace1" contentDisplay="TOP" onAction="#goToCar1" prefHeight="231.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Hyundai i20 1.4 Sportz, 2012, Petrol">
+            <JFXButton fx:id="carSpace1" contentDisplay="TOP" onAction="#goToCar1" prefHeight="231.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Tata Nexon">
                <graphic>
-                  <ImageView fx:id="menuImageView1" fitHeight="160.0" fitWidth="241.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="menuImageView1" fitHeight="156.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../resources/images/tata1.jpg" />
+                        <Image url="@../resources/images/tata1a.jpg" />
                      </image>
                   </ImageView>
                </graphic>
@@ -33,11 +33,11 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="carSpace2" contentDisplay="TOP" onAction="#gotoCar2" prefHeight="234.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Hyundai i10 2012 Petrol 38000 Km Driven">
+            <JFXButton fx:id="carSpace2" contentDisplay="TOP" onAction="#gotoCar2" prefHeight="234.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Tata Bolt">
                <graphic>
                   <ImageView fx:id="menuImageView2" fitHeight="138.0" fitWidth="242.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../resources/images/tata2.jpg" />
+                        <Image url="@../resources/images/tata2a.jpg" />
                      </image>
                   </ImageView>
                </graphic>
@@ -49,11 +49,11 @@
       </HBox>
       <HBox fx:id="menuHBox2" prefHeight="230.0" prefWidth="635.0">
          <children>
-            <JFXButton fx:id="carSpace3" contentDisplay="TOP" onAction="#gotoCar3" prefHeight="237.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Hyundai Verna VGT CRDi SX, 2009, Diesel">
+            <JFXButton fx:id="carSpace3" contentDisplay="TOP" onAction="#gotoCar3" prefHeight="237.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Tata Indica">
                <graphic>
-                  <ImageView fx:id="menuImageView3" fitHeight="137.0" fitWidth="212.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="menuImageView3" fitHeight="138.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../resources/images/toyota3.jpg" />
+                        <Image url="@../resources/images/tata3a.jpg" />
                      </image>
                   </ImageView>
                </graphic>
@@ -61,11 +61,11 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="carSpace4" contentDisplay="TOP" onAction="#goToCar4" prefHeight="235.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Hyundai Grand I10 Sportz 1.2 Kappa VTVT, 2014, Petrol">
+            <JFXButton fx:id="carSpace4" contentDisplay="TOP" onAction="#goToCar4" prefHeight="235.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Tata Manza">
                <graphic>
-                  <ImageView fx:id="menuImageView4" fitHeight="164.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="menuImageView4" fitHeight="164.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../resources/images/tata4.jpg" />
+                        <Image url="@../resources/images/tata4a.jpg" />
                      </image>
                   </ImageView>
                </graphic>

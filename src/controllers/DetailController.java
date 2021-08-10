@@ -82,7 +82,6 @@ public class DetailController extends LoadComponents implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
         contactDetails.setVisible(false);
         String currCarName = LoadComponents.getUniqueCarName();
         System.out.println(LoadComponents.getUniqueCarName());
@@ -93,7 +92,6 @@ public class DetailController extends LoadComponents implements Initializable {
                 setTextFields(entity);
             }
         }
-        imageView.setImage(images.get(0));
         addToCartLabel.setVisible(false);
     }
 
