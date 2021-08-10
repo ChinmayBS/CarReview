@@ -44,6 +44,12 @@ public class LoginController implements Initializable {
     @FXML
     private JFXButton forgotPassword;
 
+    private static String userName;
+
+    public static String getUserName(){
+        return userName;
+    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -72,7 +78,9 @@ public class LoginController implements Initializable {
             username = usernameText.getText();
             password = passwordText.getText();
 
-           boolean flag=false;
+            userName=username;
+
+            boolean flag=false;
             for (Map.Entry element : loginMap.entrySet()) {                                        //username password key value pairs
                 if (element.getKey().equals(username) && element.getValue().equals(password)) {
                     flag=true;

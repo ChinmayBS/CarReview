@@ -1,5 +1,6 @@
 package controllers;
 
+import backend.LoadComponents;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPopup;
 import javafx.application.Platform;
@@ -19,7 +20,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class HomePageController implements Initializable {
+public class HomePageController extends LoadComponents implements Initializable {
 
     public JFXButton logoutButton;
     public JFXButton exitButton;
@@ -62,16 +63,19 @@ public class HomePageController implements Initializable {
         popUp.setVisible(false);
         int currCartValue=Integer.parseInt(totalcarsLabel.getText());
         totalcarsLabel.setText(String.valueOf(currCartValue+cartSize));
+        String userName=LoginController.getUserName();
+        welcomeLabel.setText(welcomeLabel.getText()+" "+userName);
     }
 
     @FXML
     void contactUs(ActionEvent event) {
-
+        LoadComponents.closeWindow(contactButton);
+        LoadComponents.displayWindow("../fxml/contactus.fxml");
     }
 
     @FXML
     void goToHome(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../fxml/menu.fxml"));
+        Parent root=LoadComponents.getRoot("../fxml/menu.fxml");
         holderPane.getChildren().add(root);
     }
 
@@ -101,7 +105,6 @@ public class HomePageController implements Initializable {
 
         Stage stage=new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("../fxml/login.fxml"));
-        // Parent root = FXMLLoader.displayWindow(getClass().getResource("../fxml/signup.fxml"));
         stage.setTitle("Car Review");
         stage.setResizable(false);
         stage.setScene(new Scene(root, 800, 500));
