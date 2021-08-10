@@ -92,10 +92,7 @@ public class DetailController extends LoadComponents implements Initializable {
                 setTextFields(entity);
             }
         }
-        images=new ArrayList<>();
-        images.add(new Image("resources/images/hyundai1a.jpg"));
-        images.add(new Image("resources/images/hyundai1b.jpg"));
-        images.add(new Image("resources/images/hyundai1c.jpg"));
+        imageView.setImage(images.get(0));
     }
 
     private void setTextFields(String[] entity){
@@ -110,6 +107,11 @@ public class DetailController extends LoadComponents implements Initializable {
         noOfOwners.setText(entity[8]);
         message.setText(entity[9]);
         whatsapp.setText(entity[10]);
+        images=new ArrayList<>();
+        for(int i=11;i<15;i++){
+            images.add(new Image(entity[i]));
+            System.out.println(entity[i]);
+        }
     }
 
     @FXML

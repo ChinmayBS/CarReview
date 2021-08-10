@@ -4,6 +4,7 @@ import backend.LoadComponents;
 import com.jfoenix.  controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
@@ -45,20 +46,31 @@ public class HyundaiController extends LoadComponents {
     @FXML
     private ImageView menuImageView4;
 
+    private void gotoCar(JFXButton carSpace){
+        System.out.println(carSpace.getText());
+        LoadComponents.setUniqueCarName(carSpace.getText());
+        LoadComponents.closeWindow(carSpace);
+        LoadComponents.displayWindow("../fxml/detail.fxml");
+    }
+
+    @FXML
+    void goToCar1(ActionEvent event) {
+        this.gotoCar(carSpace1);
+    }
 
     @FXML
     void goToCar2(ActionEvent event) {
-
+        this.gotoCar(carSpace2);
     }
 
     @FXML
     void goToCar3(ActionEvent event) {
-
+        this.gotoCar(carSpace3);
     }
 
     @FXML
     void goToCar4(ActionEvent event) {
-
+        this.gotoCar(carSpace4);
     }
 
     @FXML
@@ -67,13 +79,6 @@ public class HyundaiController extends LoadComponents {
         LoadComponents.displayWindow("../fxml/homepage.fxml");
     }
 
-    @FXML
-    void goToCar1(ActionEvent event) {
-        System.out.println(carSpace1.getText());
-        LoadComponents.setUniqueCarName(carSpace1.getText());
-        LoadComponents.closeWindow(carSpace1);
-        LoadComponents.displayWindow("../fxml/detail.fxml");
-    }
 
 }
 

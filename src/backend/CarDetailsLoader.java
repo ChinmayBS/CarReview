@@ -13,7 +13,7 @@ public class CarDetailsLoader extends CSVLoader{
 
         readCSV();
 
-        String[] rowValues=new String[11];
+        String[] rowValues=new String[15];
 
         for(String row:getCSVString()){
             rowValues=row.split(",");

@@ -46,14 +46,31 @@ public class TataController extends LoadComponents{
     @FXML
     private ImageView menuImageView4;
 
+    private void gotoCar(JFXButton carSpace){
+        System.out.println(carSpace.getText());
+        LoadComponents.setUniqueCarName(carSpace.getText());
+        LoadComponents.closeWindow(carSpace);
+        LoadComponents.displayWindow("../fxml/detail.fxml");
+    }
+
     @FXML
     void goToCar1(ActionEvent event) {
+        this.gotoCar(carSpace1);
+    }
 
+    @FXML
+    void gotoCar2(ActionEvent event) {
+        this.gotoCar(carSpace2);
+    }
+
+    @FXML
+    void gotoCar3(ActionEvent event) {
+        this.gotoCar(carSpace3);
     }
 
     @FXML
     void goToCar4(ActionEvent event) {
-
+        this.gotoCar(carSpace4);
     }
 
     @FXML
@@ -62,15 +79,7 @@ public class TataController extends LoadComponents{
         LoadComponents.displayWindow("../fxml/homepage.fxml");
     }
 
-    @FXML
-    void gotoCar2(ActionEvent event) {
 
-    }
-
-    @FXML
-    void gotoCar3(ActionEvent event) {
-
-    }
 
 }
 
