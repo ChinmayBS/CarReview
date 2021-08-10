@@ -14,6 +14,7 @@
    <children>
       <JFXTextField fx:id="usernameText" layoutX="306.0" layoutY="202.0" prefHeight="26.0" prefWidth="212.0" promptText="Enter Your Username" />
       <JFXPasswordField fx:id="passwordText" layoutX="306.0" layoutY="288.0" prefHeight="26.0" prefWidth="212.0" promptText="Enter Your Password" />
+      <JFXTextField fx:id="passwordUnwrapped" layoutX="306.0" layoutY="288.0" prefHeight="26.0" prefWidth="212.0" promptText="Enter Your Password" />
       <ImageView fitHeight="34.0" fitWidth="26.0" layoutX="269.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../resources/icons/login.png" />

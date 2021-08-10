@@ -19,6 +19,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.ResourceBundle;
 
@@ -29,6 +30,9 @@ public class LoginController implements Initializable {
 
     @FXML
     public JFXCheckBox showPassword;
+
+    @FXML
+    public JFXTextField passwordUnwrapped;
 
     @FXML
     private JFXTextField usernameText;
@@ -52,9 +56,14 @@ public class LoginController implements Initializable {
         return userName;
     }
 
+    private String getPassword(){
+        return showPassword.isSelected()?passwordUnwrapped.getText():passwordText.getText();
+    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        passwordUnwrapped.setVisible(false);
     }
 
     private boolean validateFields(){                         //make sure that all fields are filled
@@ -78,7 +87,8 @@ public class LoginController implements Initializable {
         String username,password;
         if(validateFields()) {
             username = usernameText.getText();
-            password = passwordText.getText();
+            password = this.getPassword();
+            //System.out.println(password);
 
             userName=username;
 
@@ -122,5 +132,17 @@ public class LoginController implements Initializable {
     }
 
     public void unMaskPassword(ActionEvent actionEvent) {
+        if(showPassword.isSelected()){
+            String text=passwordText.getText();
+            passwordText.setVisible(false);
+            passwordUnwrapped.setText(text);
+            passwordUnwrapped.setVisible(true);
+        }
+        else{
+            String text=passwordUnwrapped.getText();
+            passwordUnwrapped.setVisible(false);
+            passwordText.setText(text);
+            passwordText.setVisible(true);
+        }
     }
 }
