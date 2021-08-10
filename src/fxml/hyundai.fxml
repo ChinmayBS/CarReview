@@ -20,7 +20,7 @@
          </children></AnchorPane>
       <HBox fx:id="menuHBox1" prefHeight="230.0" prefWidth="635.0">
          <children>
-            <JFXButton fx:id="carSpace1" contentDisplay="TOP" onAction="#goToCar1" prefHeight="231.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Hyundai i20">
+            <JFXButton fx:id="carSpace1" contentDisplay="TOP" onAction="#goToCar1" prefHeight="231.0" prefWidth="400.0" style="-fx-background-color: #a5a58d;" text="Hyundai i20">
                <graphic>
                   <ImageView fx:id="menuImageView1" fitHeight="160.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -50,7 +50,7 @@
          <children>
             <JFXButton fx:id="carSpace3" contentDisplay="TOP" onAction="#goToCar3" prefHeight="237.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Hyundai Verna">
                <graphic>
-                  <ImageView fx:id="menuImageView3" fitHeight="137.0" fitWidth="212.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="menuImageView3" fitHeight="137.0" fitWidth="218.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../resources/images/hyundai3a.jpg" />
                      </image>
@@ -60,7 +60,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="carSpace4" contentDisplay="TOP" onAction="#goToCar4" prefHeight="235.0" prefWidth="400.0" style="-fx-background-color: #6b705c;" text="Hyundai i10">
+            <JFXButton fx:id="carSpace4" contentDisplay="TOP" onAction="#goToCar4" prefHeight="235.0" prefWidth="400.0" style="-fx-background-color: #a5a58d;" text="Hyundai i10">
                <graphic>
                   <ImageView fx:id="menuImageView4" fitHeight="164.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
                      <image>
