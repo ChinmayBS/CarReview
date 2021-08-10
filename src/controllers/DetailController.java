@@ -83,7 +83,7 @@ public class DetailController extends LoadComponents implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         contactDetails.setVisible(false);
-        String currCarName=LoadComponents.getUniqueCarName();
+        String currCarName = LoadComponents.getUniqueCarName();
         System.out.println(LoadComponents.getUniqueCarName());
         CarDetailsLoader carDetailsLoader=new CarDetailsLoader("src/resources/files/cardetails.csv");
         ArrayList<String[] > cars=carDetailsLoader.getCarDetails();
