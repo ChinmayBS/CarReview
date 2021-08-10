@@ -26,6 +26,10 @@ public class LoginController implements Initializable {
 
     @FXML
     public ImageView carImageView;
+
+    @FXML
+    public JFXCheckBox showPassword;
+
     @FXML
     private JFXTextField usernameText;
 
@@ -38,8 +42,6 @@ public class LoginController implements Initializable {
     @FXML
     private JFXButton signupButton ;
 
-    @FXML
-    private JFXCheckBox remember;
 
     @FXML
     private JFXButton forgotPassword;
@@ -119,4 +121,6 @@ public class LoginController implements Initializable {
 
     }
 
+    public void unMaskPassword(ActionEvent actionEvent) {
+    }
 }

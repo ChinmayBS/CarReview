@@ -25,13 +25,12 @@
          </image></ImageView>
       <JFXButton fx:id="loginButton" layoutX="456.0" layoutY="344.0" onAction="#login" prefHeight="34.0" prefWidth="77.0" style="-fx-background-color: #168aad;" text="Log In" />
       <JFXButton fx:id="signupButton" layoutX="677.0" layoutY="74.0" onAction="#signup" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: #168aad;" text="Sign Up" />
-      <JFXCheckBox fx:id="remember" layoutX="303.0" layoutY="339.0" prefHeight="34.0" prefWidth="108.0" text="Remember" />
+      <JFXCheckBox fx:id="showPassword" layoutX="282.0" layoutY="344.0" onAction="#unMaskPassword" prefHeight="34.0" prefWidth="141.0" text="show password" />
       <ImageView fx:id="carImageView" fitHeight="86.0" fitWidth="91.0" layoutX="335.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../resources/icons/car.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="forgotPassword" layoutX="305.0" layoutY="388.0" prefHeight="26.0" prefWidth="212.0" text="Forgot Your Password" underline="true" />
       <Label layoutX="318.0" layoutY="119.0" prefHeight="26.0" prefWidth="45.0" text="Car" textFill="#1b8dcf">
          <font>
             <Font name="Hack Regular" size="13.0" />
