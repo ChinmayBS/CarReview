@@ -116,7 +116,8 @@ public class DetailController extends LoadComponents implements Initializable {
 
     @FXML
     void addToCart(ActionEvent event) {
-        HomePageController.increaseCartCartSize();
+        History.AddCarsToCart(carName.getText());
+        //HomePageController.increaseCartCartSize();
     }
 
     @FXML

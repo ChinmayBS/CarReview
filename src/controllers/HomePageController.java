@@ -54,15 +54,14 @@ public class HomePageController extends LoadComponents implements Initializable 
     private AnchorPane holderPane;
 
     private static int cartSize=0;
-    public static void increaseCartCartSize(){
-        cartSize+=1;
+    public static void setCartCartSize(int value){
+        cartSize=value;
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         popUp.setVisible(false);
-        int currCartValue=Integer.parseInt(totalcarsLabel.getText());
-        totalcarsLabel.setText(String.valueOf(currCartValue+cartSize));
+        totalcarsLabel.setText(String.valueOf(cartSize));
         String userName=LoginController.getUserName();
         welcomeLabel.setText(welcomeLabel.getText()+" "+userName);
     }
@@ -86,7 +85,8 @@ public class HomePageController extends LoadComponents implements Initializable 
 
     @FXML
     void myHistory(ActionEvent event) {
-
+        LoadComponents.closeWindow(historyButton);
+        LoadComponents.displayWindow("../fxml/history.fxml");
     }
 
     @FXML
